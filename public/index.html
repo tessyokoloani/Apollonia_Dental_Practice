@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollonia Dental practice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1>Apollonia Dental Practice</h1>
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="#staff">Our people</a>
+            <a href="#services">Services</a>
+            <a href="#addStaffForm">Add Staff</a>
+            <!-- <a href="#addServices">Add Services</a> -->
+            <a href="#contact_us">Contact_Us</a>
+            <a href="editDeleteStaff.html">Edit Staff</a>
+        </nav>
+    </header>
+    <!-- banner -->
+    <div class="container" id="staff">
+        <div>
+            <h2>Our people</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam facilis recusandae officia. Ipsum impedit eaque
+                cumque illo consectetur beatae, sed voluptatibus aperiam veritatis qui deleniti dolorem molestias! Eveniet, enim Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus nesciunt ullam est, eius, quidem sed neque aut dolorum iste dicta optio consectetur iusto veritatis in, veniam nostrum a accusamus Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe dignissimos exercitationem enim beatae consectetur rem voluptatibus cum amet quam, fugiat sunt unde reprehenderit voluptas error quod ipsum earum tempora?
+                hic!</p>
+            <section>
+                <h3>This is a list of all our staff</h3>
+                <table id="staffTable">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Department</th>
+                        <th>Position</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be dynamically added here -->
+                </tbody>
+                </table>
+            </section>
+
+            
+
+        </div>
+
+        <!-- Our Services -->
+
+        <div id="services">
+            <h2>Our services include:</h2>
+            <section>
+                <h3>General Dentistry</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat tenetur beatae odio tempora magni consequuntur aliquid magnam laborum sunt tempore dignissimos animi dolor exercitationem deserunt rerum at, provident ullam reprehenderit eius quisquam accusantium soluta sapiente sit. Quisquam deleniti iure obcaecati minima magnam ullam reiciendis dicta recusandae nisi! Minus aliquid minima iure perspiciatis fugit! Deserunt quis nisi obcaecati sequi odio? Provident quasi minus fugit itaque architecto officia nemo odit? Non quos molestias ipsum magnam nobis facilis labore officia dolor voluptate consequuntur.</p>
+
+            </section><br>
+            <section>
+                <h3>Surgery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat tenetur beatae odio tempora magni consequuntur aliquid
+                magnam laborum sunt tempore dignissimos animi dolor exercitationem deserunt rerum at, provident ullam reprehenderit eius
+                quisquam accusantium soluta sapiente sit. Quisquam deleniti iure obcaecati minima magnam ullam reiciendis dicta
+                recusandae nisi! Minus aliquid minima iure perspiciatis fugit! Deserunt quis nisi obcaecati sequi odio? Provident quasi
+                minus fugit itaque architecto officia nemo odit? Non quos molestias ipsum magnam nobis facilis labore officia dolor
+                voluptate consequuntur.</p>
+            
+            </section><br>
+            <section>
+                <h3>Orthodontics</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat tenetur beatae odio tempora magni consequuntur aliquid
+                magnam laborum sunt tempore dignissimos animi dolor exercitationem deserunt rerum at, provident ullam reprehenderit eius
+                quisquam accusantium soluta sapiente sit. Quisquam deleniti iure obcaecati minima magnam ullam reiciendis dicta
+                recusandae nisi! Minus aliquid minima iure perspiciatis fugit! Deserunt quis nisi obcaecati sequi odio? Provident quasi
+                minus fugit itaque architecto officia nemo odit? Non quos molestias ipsum magnam nobis facilis labore officia dolor
+                voluptate consequuntur.sunt.</p>
+            
+            </section><br>
+            <section>
+                <h3>Restorative Dentistry</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat tenetur beatae odio tempora magni consequuntur aliquid
+                magnam laborum sunt tempore dignissimos animi dolor exercitationem deserunt rerum at, provident ullam reprehenderit eius
+                quisquam accusantium soluta sapiente sit. Quisquam deleniti iure obcaecati minima magnam ullam reiciendis dicta
+                recusandae nisi! Minus aliquid minima iure perspiciatis fugit! Deserunt quis nisi obcaecati sequi odio? Provident quasi
+                minus fugit itaque architecto officia nemo odit? Non quos molestias ipsum magnam nobis facilis labore officia dolor
+                voluptate consequuntur.</p>
+            
+            </section><br>
+            <section>
+                <h3>Pediatric Dentistry</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat tenetur beatae odio tempora magni consequuntur aliquid
+                magnam laborum sunt tempore dignissimos animi dolor exercitationem deserunt rerum at, provident ullam reprehenderit eius
+                quisquam accusantium soluta sapiente sit. Quisquam deleniti iure obcaecati minima magnam ullam reiciendis dicta
+                recusandae nisi! Minus aliquid minima iure perspiciatis fugit! Deserunt quis nisi obcaecati sequi odio? Provident quasi
+                minus fugit itaque architecto officia nemo odit? Non quos molestias ipsum magnam nobis facilis labore officia dolor
+                voluptate consequuntur.</p>
+            
+            </section><br>
+        </div>
+
+    
+    <!-- body -->
+    
+        <!-- Form to add new staff -->
+        <div class="add-form" id="addStaff">
+            <h2>Add New Staff</h2>
+            <form id="addStaffForm">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Enter staff first name" required><br>
+
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Enter staff last name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter staff email" required><br>
+
+                <label for="phone_number">Phone Number:</label>
+                <input type="text" id="phone_number" name="phone_number" placeholder="Enter staff phone_number" required><br>
+                
+                
+                <label for="department">Department:</label>
+                <select id="department" class="select" name="department" required>
+                    <!-- populate select for department -->
+                </select><br>
+        
+                <label for="position"></label>
+                <input type="text" id="position" name="medical staff" placeholder="Enter staff position" value="medical staff" required><br>
+        
+                <button type="submit" class="btn">Add Staff</button>
+            </form>
+        </div>
+
+        <!-- contact form -->
+
+        <div class="container" id="contact_us">
+            <h1>Contact Us</h1>
+            <form id="contact_us_form">
+                <div class="form-group">
+                    <label for="contact_us_name">Name:</label>
+                    <input type="text" id="contact_us_name" name="contact_us_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact_us_email">Email:</label>
+                    <input type="email" id="contact_us_email" name="contact_us_email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact_us_message">Message:</label>
+                    <textarea id="contact_us_message" name="contact_us_message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            
+        </div>
+
+    
+    <!-- footer -->
+    <footer>
+        <p class="footer">&copy; 2024 Apollonia Dental Services. All rights reserved.</p>
+    </footer>
+    </div>
+    <script src="main.js"></script>
+    <script src="populateSelect.js"></script>
+</body>
+</html>

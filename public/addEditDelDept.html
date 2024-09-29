@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Edit and Delete Department</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <!-- header -->
+        <header>
+            <h1>Apollonia Dental Practice</h1>
+            <nav class="navbar">
+                <a href="/">Home</a>
+                <a href="/employee">Edit Staff</a>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <h2>Department</h2>
+            <div class="add-form" id="addDepartment">
+                <h2>Add New Department</h2>
+
+                <form id="addDepartmentForm">
+                    
+                    <label for="department_name">Department Name:</label>
+                    <input type="text" id="department_name" name="department_name" placeholder="Enter department name" required><br>
+            
+                    <label for="department_code">Department Code:</label>
+                    <input type="text" id="department_code" name="department_code" placeholder="Enter department_code" required><br>
+            
+                    <button type="submit" class="btn">Add Department</button>
+                </form>
+            </div><br><br>
+            <!-- Edit form -->
+            <div class="add-form" id="editDForm">
+                <h2>Edit Department</h2>
+                <form id="editDeptForm">
+                    <label for="existing_department_name">Existing Department Name:</label>
+                    <select id="existing_department_name" class="select" placeholder="Enter existing  department name" required>
+                        <!-- populate select tag -->
+                        
+                    </select><br>
+
+                    <label for="editDepartmentName">Department Name:</label>
+                    <input type="text" id="editDepartmentName" name="editDepartmentName" placeholder="Edit Department Name">
+                    <br>
+                    <label for="editDepartmentCode">Department Code:</label>
+                    <input type="text" id="editDepartmentCode" name="editDepartmentCode" placeholder="Edit Department Code">
+                    <br>
+
+                    <button type=submit >Save Changes</button>
+                </form>
+            </div>
+            <br>
+            <br>
+            <div class="add-form" id="deleteDepartment">
+                <h2>Delete Department</h2>
+                <form id="deleteDeptForm">
+                    <label for="existing_department_name1">Existing Department Name:</label>
+                    <select id="existing_department_name1" class="select" placeholder="Enter existing  department name" required>
+                        <!-- populate select tag -->
+                    </select><br>
+                   
+                    <button type="submit">Delete Department</button>
+                </form>
+            </div>
+    </div>
+
+    <script src="department.js"></script>
+    <script src="populateSelect.js"></script>
+</body>
+</html>

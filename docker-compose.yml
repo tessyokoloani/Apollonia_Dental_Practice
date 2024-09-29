@@ -1,0 +1,18 @@
+
+version: "3"
+services:
+  web:
+    build: /
+    image: "apollonia"
+    container_name: "apollo-dental"
+    ports:
+      - "4004:4004"  
+    networks:
+      - "apollonia-network"
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:latest
+networks:
+  apollonia-network:
+    driver: bridge

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and Delete Employee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <!-- header -->
+        <header>
+            <h1>Apollonia Dental Practice</h1>
+            <nav class="navbar">
+                <a href="/">Home</a>
+                <a href="/employee">Edit Staff</a>
+                <a href="/department">Edit Department</a>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <h2>Edit Employee</h2>
+            <!-- Edit form -->
+            <div class="add-form" id="editForm">
+                <form id="editStaffForm">
+                    <label for="editFirstName">First Name:</label>
+                    <input type="text" id="editFirstName" name="editFirstName" placeholder="Edit first name">
+                    <br>
+                    <label for="editLastName">Last Name:</label>
+                    <input type="text" id="editLastName" name="editLastName" placeholder="Edit last name">
+                    <br>
+                    <label for="editEmail">Email:</label>
+                    <input type="text" id="editEmail" name="editEmail" placeholder="Existing email">
+                    <br>
+                    <label for="editPhoneNumber">Phone Number:</label>
+                    <input type="text" id="editPhoneNumber" name="editPhoneNumber" placeholder="Edit Phone Number">
+                    <br>
+                    <label for="editDepartment">Department:</label>
+                    <select id="editDepartment" class="select" required>
+                        <!-- populate the select tag for department-->
+                    </select><br>
+                    <label for="editPosition">Position:</label>
+                    <input type="text" id="editPosition" placeholder="Edit position">
+                    <br>
+                    <button type=submit id="saveEdit">Save Changes</button>
+                    <button id="cancelEdit">Cancel</button>
+                </form>
+            </div>
+            <br>
+            <br>
+            <div class="add-form" id="deleteStaff">
+                <h2>Delete Employee</h2>
+                <form id="deleteStaffForm">
+                    <label for="deleteStaffEmail">Staff Email:</label>
+                    <input type="email" name="deleteStaffEmail" id="deleteStaffEmail" placeholder="Enter Email" title="Enter existing email of staff to be deleted">
+                    <button type="submit">Delete Staff</button>
+                </form>
+            </div>
+    </div>
+
+    <script src="populateSelect.js"></script>
+    <script src="staff.js"></script>
+    
+</body>
+</html>
