@@ -41,7 +41,7 @@ Steps to Install
 
     bash
 
-git clone https://github.com/tessyokoloani/apollonia-dental-practice-app.git
+git clone https://github.com/tessyokoloani/Apollonia_Dental_Practice.git
 
 Navigate to the project directory:
 
