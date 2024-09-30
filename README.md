@@ -1,4 +1,4 @@
-**Apollonia Stack Application **
+**Apollonia Dental Practice FullStack Application **
 (Frontend with HTML, CSS, JavaScript; Backend with Node, Express, MongoDB)
 =====================================
 ### Overview
